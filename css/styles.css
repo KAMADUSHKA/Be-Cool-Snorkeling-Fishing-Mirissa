@@ -10914,7 +10914,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    /* background-color: transparent; */
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11350,12 +11350,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .contact-info {
-  background-color:  rgba(255, 255, 255, 0.8);
+  background-color:  rgba(255, 255, 255, 0.5);
   border-radius: 12px;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   margin-bottom: 10px;
+  margin: 10px;
 }
 
 .contact-info:hover {
@@ -11365,20 +11366,20 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .contact-info h4 {
   font-size: 1.75rem;
-  color: #333;
+  color:  rgba(255, 255, 255);
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .contact-info p {
-  font-size: 1rem;
-  color: #555;
-  margin: 10px 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255);
+  margin: 5px 0;
   line-height: 1.6;
 }
 
 .contact-info strong {
-  color: #000;
+  color: var(--bs-warning);
 }
 
 .card {
@@ -11390,3 +11391,96 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 400;
 }
 
+.rounded-circle{border-radius:50% !important}
+
+.border{border:1px solid #dee2e6 !important}
+
+/* Social media */
+.btn-square {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color:white
+}
+
+/* Facebook */
+.fa-facebook {
+  color: #3473fd; 
+}
+
+/* WhatsApp */
+.fa-whatsapp {
+  color: #139a44;
+}
+
+/* TripAdvisor */
+.fa-tripadvisor {
+  color: #229269;
+}
+
+/* YouTube */
+.fa-youtube {
+  color: #ff0000;
+}
+
+.social_media {
+  margin: 15px;
+}
+
+.icon-large {
+  font-size: 35px; /* Adjust the size as needed */
+}
+
+#about {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background: linear-gradient(45deg,  rgb(150, 255, 255), rgb(255, 255, 255),   rgb(150, 255, 255));
+  background-size: 300% 300%;
+  animation: gradiant 5s ease infinite;
+}
+
+@keyframes gradiant {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .btn-square {
+    width: 30px;
+    height: 30px;
+  }
+
+  .icon-large {
+    font-size: 20px; /* Adjust the size as needed */
+  }
+}
+
+@media (max-width: 768px) {
+  .social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between icons as needed */
+    margin: 25px 0px;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+    color: rgba(255, 255, 255);
+    margin: 3px 0;
+    line-height: 1;
+  }
+}
