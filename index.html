@@ -83,6 +83,12 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         <!-- Structured Data (JSON-LD) - For SEO -->
         <script type="application/ld+json">
             {
@@ -108,7 +114,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <!-- <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
+                 <h4 class="navbar-heading">Mirissa Turtle Snorkeling & Fishing Center</h4>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -130,7 +137,7 @@
             <div class="container">
                 <div class="masthead-subheading" >Welcome To Mirissa Turtle Snorkeling & Fishing Center</div>
                 <div class="masthead-heading text-uppercase">Turtle Snorkeling / Fishing</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
             </div>
         </header>
 
@@ -251,7 +258,7 @@
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#SnorkelingWithTurtles">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -259,14 +266,16 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Snorkeling With Turtles</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
+                                <div class="portfolio-caption-subheading text-muted">Experience the joy of snorkeling alongside graceful sea turtles in crystal-clear waters. Perfect for nature lovers and underwater explorers.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to discover this magical journey.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#SnorkelingWithTurtles">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#DeepSeaFishingTours">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -274,14 +283,16 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Deep Sea Fishing Tours</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
+                                <div class="portfolio-caption-subheading text-muted">Embark on a thrilling adventure into the deep blue, where big catches and breathtaking views await. Perfect for fishing enthusiasts of all levels.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to learn more about this exciting expedition.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#DeepSeaFishingTours">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#LowDeepseaFishingTours">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -289,14 +300,16 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Low Deep sea Fishing Tours</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
+                                <div class="portfolio-caption-subheading text-muted">Enjoy an immersive fishing experience guided by local expertise. Reel in the catch of the day while savoring the serenity of the open majestic ocean.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to uncover the details of this unique tour.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#LowDeepseaFishingTours">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#ScubaDiving">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -304,29 +317,33 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Scuba Diving</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
+                                <div class="portfolio-caption-subheading text-muted">Discover the wonders of the underwater world as you dive into vibrant coral reefs and marine ecosystems. A must for adventure seekers.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to find out more about this breathtaking journey.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#ScubaDiving">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <!-- Portfolio item 5-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#SnorkelingWithWhales">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
                                 <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Whales Watching Tors</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                                <div class="portfolio-caption-heading">Snorkeling With Whales</div>
+                                <div class="portfolio-caption-subheading text-muted">Immerse yourself in a once-in-a-lifetime opportunity to snorkel with majestic whales and witness their beauty up close.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to dive into this incredible experience.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#SnorkelingWithWhales">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 6-->
                         <div class="portfolio-item card-bg">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#BoatTours">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
@@ -334,7 +351,9 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Boat Tours</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
+                                <div class="portfolio-caption-subheading text-muted">Set sail on a relaxing boat tour and soak in stunning ocean views, vibrant marine life, and a peaceful escape from the shore.</div>
+                                <div class="portfolio-caption-btn text-success">Click 'Read More' to explore what’s in store for you.</div>
+                                <a class="btn btn-info btn-xl text-uppercase" data-bs-toggle="modal" href="#BoatTours">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -346,64 +365,119 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading text-uppercase">Our Tour Snaps</h2>
+                    <h3 class="section-subheading text-muted">Capture the essence of your unforgettable journey with us! Our tour snaps showcase the beauty, excitement, and serenity that await you on every adventure.</h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto" src="assets/img/team/2.jpg" alt="..." />
                             <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto" src="assets/img/team/3.jpg" alt="..." />
                             <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">From vibrant underwater scenes to breathtaking landscapes, each photo tells a story of discovery, joy, and memories made. Let these snapshots be a glimpse into the remarkable experiences you'll cherish long after the journey ends.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Clients-->
-        <div class="py-5">
+        <div class="py-5 testimonials page-section">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
+                <div class="text-center">
+                    <h1 class="section-heading text-uppercase">What Clients are Say</h1>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeInRightBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                            <div class="swiper init-swiper">
+                                <div class="swiper-wrapper">
+                                
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <img src="assets/img/TripAdvicer.png" class="testimonial-img" alt="TripAdvisor" loading="lazy">
+                                            <h3>Stef K</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                            <p>
+                                                <span>It was an amazing experience. I haven't been diving in a couple of years (with one exception). So it was nice that they would give support whenever needed. 
+                                                    You could tell that they know what they are doing. It was fun to see that the whole family helps whenever needed. I did two dives on this day. In between the dives 
+                                                    there was time for some tea and biscuits (free of charge).</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <img src="assets/img/TripAdvicer.png" class="testimonial-img" alt="TripAdvisor" loading="lazy">
+                                            <h3>Mohamed K (France)</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                            <p>
+                                                <span>Amazing Experience of Diving with Kassu the divemaster and all his Staff very professional and helpful
+                                                    We saw many fishes because of the experience of Kasu in the area I recommend without any Hesitation</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <img src="assets/img/TripAdvicer.png" class="testimonial-img" alt="TripAdvisor" loading="lazy">
+                                            <h3>Sepprait</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                            <p>
+                                                <span>We went there twice as beginners and it was amazing both times. The exercises and instructions were great for us. 
+                                                    Fist exercises were done in shallow water and after that we went for real dive. They gave us feel of confidence and safety when doing our fist dives. 
+                                                    Places were we dived were beautiful and amazing. Great place for new and also professional people.</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-item">
+                                            <img src="assets/img/TripAdvicer.png" class="testimonial-img" alt="TripAdvisor" loading="lazy">
+                                            <h3>Paula R</h3>
+                                            <div class="stars">
+                                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            </div>
+                                            <p>
+                                                <span>I’ve been diving before but I have never had such an amazing instructor. The whole team was super nice and made sure I was comfortable all the time.
+                                                    I saw incredible species I had never seen before!!!
+                                                    Overall totally exceeded my expectations!!! 100% would recommend</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
             </div>
         </div>
 
@@ -419,13 +493,14 @@
                     <!-- First Column: Address, Contact No, Email -->
                     <div class="col-md-6">
                         <div class="contact-info card p-4 shadow-lg rounded">
-                            <p><strong>Address:</strong> 123 Ocean View, Mirissa, Sri Lanka</p>
+                            <p><strong>Address:</strong><a href="https://www.google.com/maps/place/Be+Cool+Snorkeling+%26+Fishing+Mirissa/@5.9376982,80.4795355,19.11z/data=!4m6!3m5!1s0x3ae13f00660fb555:0x70672cf92da605ad!8m2!3d5.9372591!4d80.4805834!16s%2Fg%2F11wx206kbx?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                                Thappawatta Rd, Mirissa, 81740</a></p>
                         </div>
                         <div class="contact-info card p-4 shadow-lg rounded">
-                            <p><strong>Contact No:</strong> +94 123 456 789</p>
+                            <p><strong>Contact No:</strong><a href="tel:+94710314473">+94710314473</a></p>
                         </div>
                         <div class="contact-info card p-4 shadow-lg rounded">
-                            <p><strong>Email:</strong> info@mirissasnorkeling.com</p>
+                            <p><strong>Email:</strong><a href="mailto:">info@mirissasnorkeling.com</a></p>
                         </div>
 
                         <div class="social_media">
@@ -433,15 +508,16 @@
                             <a href="#" class="btn btn-square border rounded-circle nav-fill me-3">
                                 <i class="fab fa-facebook icon-large"></i>
                             </a>
-                            <a href="#" class="btn btn-square border rounded-circle nav-fill me-3">
+                            <a href="https://wa.me/+94710314473?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services" class="btn btn-square border rounded-circle nav-fill me-3">
                                 <i class="fab fa-whatsapp icon-large"></i>
                             </a>
-                            <a href="#" class="btn btn-square border rounded-circle nav-fill me-3">
-                                <i class="fab fa-tripadvisor icon-large"></i>
-                            </a>
-                            <a href="#" class="btn btn-square border rounded-circle nav-fill me-3">
-                                <i class="fab fa-youtube icon-large"></i>
-                            </a>
+                            <a href="https://www.tripadvisor.co.uk/Attraction_Review-g12158215-d28157962-Reviews-Mirissa_Sea_Wave_Diving_Center-Thalaramba_Southern_Province.html" 
+                                class="btn btn-square border rounded-circle nav-fill me-3 tripadvisor">
+                                <img src="assets/img/tripadvisor-logo.svg" alt="TripAdvisor">
+                            </a>                            
+                            <a href="https://www.instagram.com/be_cool_snorkeling_and_fishing/" class="btn btn-square border rounded-circle nav-fill me-3">
+                                <i class="fab fa-instagram icon-large"></i>
+                            </a>                            
                         </div>
                     </div>                    
         
@@ -449,8 +525,8 @@
                     <div class="col-md-6">
                         <div class="map-container">
                             <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12624.748438879952!2d79.9554167!3d5.9417636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae10d5b87f5b963%3A0x6a53dca941ca7a0!2sMirissa%2C%20Sri%20Lanka!5e0!3m2!1sen!2sus!4v1673440520503!5m2!1sen!2sus" 
-                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.5627993816757!2d80.47953552168143!3d5.9376981760511125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13f00660fb555%3A0x70672cf92da605ad!2sBe%20Cool%20Snorkeling%20%26%20Fishing%20Mirissa!5e0!3m2!1sen!2slk!4v1735235766731!5m2!1sen!2slk" 
+                                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                             </iframe>
                         </div>
                     </div>
@@ -460,26 +536,31 @@
         
 
         <!-- Footer-->
-        <footer class="footer py-4">
+        <footer class="footer py-2">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; WebMind Innovation 2024</div>
+                    <div class="col-lg-4 text-lg-start"> Powered by <a href="webmindinnovation.com">WebMind Innovation</a> 2024 , All right reserved.</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="btn btn-outline-info btn-social mx-2 " href="https://web.facebook.com/profile.php?id=61570207032894" aria-label="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a class="btn btn-outline-info btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
 
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-outline-primary btn-danger btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        <div id="whatsapp-btn" class="whatsapp-button">
+            <a href="https://wa.me/+94710314473?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="50px"
+                    loading="lazy">
+            </a>
+        </div>
+
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="SnorkelingWithTurtles" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -488,23 +569,20 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Snorkeling With Turtles</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Dive into the crystal-clear waters and experience the thrill of swimming alongside majestic sea turtles. 
+                                        This one-hour adventure offers a unique opportunity to observe these gentle creatures in their natural habitat.</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <li><strong><span class="yellow-star">★</span> Duration :</strong> One Hour</li>
+                                        <li><strong><span class="yellow-star">★</span> Free :</strong> High Quality Camera</li>
+                                    </ul>                                        
+                                    <p>Enjoy the serene underwater world, teeming with vibrant marine life, and capture unforgettable moments. 
+                                        To make your experience even more delightful, snacks are provided for you to enjoy after your dive.</p>
+                                    <p>Get ready for an adventure that's as refreshing as it is awe-inspiring!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -515,32 +593,30 @@
         </div>
 
         <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="DeepSeaFishingTours" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="close-modal" data-bs-dismiss="modal">
+                        <img src="assets/img/close-icon.svg" alt="Close modal" class="close-icon" />
+                    </div>                    
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Deep Sea Fishing Tours</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Set sail on an exciting 4-hour fishing expedition into the deep blue sea. Perfect for both beginners and seasoned anglers, 
+                                        this tour offers the chance to reel in some impressive catches while enjoying the tranquil ocean scenery.</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <li><strong><span class="yellow-star">★</span> Duration :</strong> Four Hours</li>
+                                    </ul> 
+                                    <p>Our expert guides ensure you have all the support needed for a successful fishing experience. 
+                                        Plus, snacks are provided to keep you energized throughout the journey.</p>
+                                    <p>Join us for an unforgettable adventure that combines relaxation and the thrill of the catch!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -551,7 +627,7 @@
         </div>
 
         <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="LowDeepseaFishingTours" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -560,23 +636,17 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Low Deep Sea Fishing Tours</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Enjoy a 2-hour fishing trip that offers the excitement of deep-sea fishing closer to shore. Perfect for beginners or expert, this experience combines fun and relaxation.</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
+                                        <li><strong><span class="yellow-star">★</span> Duration :</strong> Two Hours</li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <p>Snacks are provided to keep you refreshed as you take in the ocean views and try your hand at catching fish. </p>
+                                    <p>Join us for a memorable fishing trip!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -587,7 +657,7 @@
         </div>
 
         <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="ScubaDiving" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -596,23 +666,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Scuba Divig</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Dive into the underwater world and explore vibrant coral reefs and marine life up close. To make your adventure even better, we provide a free camera so you can capture every breathtaking moment.  </p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
+                                        <!-- <li><strong><span class="yellow-star">★</span> Duration :</strong> One Hour</li> -->
+                                        <li><strong><span class="yellow-star">★</span> Free :</strong> High Quality Camera</li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <p>Whether you're a beginner or an experienced diver, our expert guides ensure a safe and enjoyable experience.</p>
+                                    <p>Discover the beauty beneath the waves and take home incredible memories!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -623,7 +688,7 @@
         </div>
 
         <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="SnorkelingWithWhales" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -632,23 +697,18 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Snorkeling With Whales</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Experience the awe of swimming alongside majestic whales in their natural habitat. Capture these unforgettable moments with the free camera provided, ensuring you take home stunning memories of this unbelievable adventure.</p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
+                                        <!-- <li><strong><span class="yellow-star">★</span> Duration :</strong> One Hour</li> -->
+                                        <li><strong><span class="yellow-star">★</span> Free :</strong> High Quality Camera</li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <p>Start your day right with a delicious breakfast provided before diving into the clear blue waters.</p>
+                                    <p>Join us for an extraordinary journey into the world of these gentle giants!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -659,7 +719,7 @@
         </div>
 
         <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="BoatTours" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
@@ -668,23 +728,17 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <h2 class="text-uppercase portfolio_modals-topic">Boat Tours</h2>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Relax and unwind on a serene one-hour boat tour, perfect for enjoying the beauty of the open sea. Take in breathtaking views, feel the gentle breeze, and spot vibrant marine life along the way. </p>
                                     <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
+                                        <li><strong><span class="yellow-star">★</span> Duration :</strong> One Hour</li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                    <p>Whether you’re seeking tranquility or a quick escape, this tour offers a refreshing break on the water.</p>
+                                    <p>Come again and make memories to cherish!</p>
+                                    <button class="btn btn-danger btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        Go Back
                                     </button>
                                 </div>
                             </div>
@@ -703,3 +757,30 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const swiper = new Swiper(".init-swiper", {
+            loop: true, // Enable infinite looping
+            autoplay: {
+                delay: 5000, // Delay between slides in milliseconds
+                disableOnInteraction: false, // Autoplay should not stop on user interaction
+            },
+            slidesPerView: 1, // Show one slide at a time
+            spaceBetween: 20, // Space between slides (optional)
+            effect: "fade", // Use fade effect for smooth transitions
+            fadeEffect: {
+                crossFade: true,
+            },
+            pagination: {
+                el: ".swiper-pagination", // Optional: Add pagination indicators
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next", // Optional: Add navigation buttons
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    });
+
+</script>

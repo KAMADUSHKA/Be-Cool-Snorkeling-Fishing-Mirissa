@@ -11047,6 +11047,13 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  margin: 10px 0px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-btn {
+  color: #e6b400;
+  margin: 10px 0px;
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -11263,8 +11270,9 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 14rem;
+  width: 25rem;
+  /* height: 14rem; */
+  border-radius: 15px;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4, .team-member .h4 {
@@ -11382,6 +11390,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: var(--bs-warning);
 }
 
+.contact-info a {
+  text-decoration: none;
+  font-size: 20px;
+  color: rgba(255, 255, 255);
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
 .card {
   border: none;
 }
@@ -11420,12 +11436,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /* TripAdvisor */
-.fa-tripadvisor {
+.tripadvisor img {
+  width: 32px;
   color: #229269;
 }
 
-/* YouTube */
-.fa-youtube {
+/* Instagram  */
+.fa-instagram  {
   color: #ff0000;
 }
 
@@ -11440,9 +11457,69 @@ section#contact form#contactForm :-ms-input-placeholder {
 #about {
   margin-top: 3px;
   margin-bottom: 3px;
-  background: linear-gradient(45deg,  rgb(150, 255, 255), rgb(255, 255, 255),   rgb(150, 255, 255));
+  background: linear-gradient(45deg,  rgb(150, 255, 100), rgb(255, 255, 255),   rgb(150, 255, 255));
   background-size: 300% 300%;
   animation: gradiant 5s ease infinite;
+}
+
+.portfolio_modals-topic {
+  color: var(--bs-yellow);
+  margin-bottom: 20px;
+}
+
+.close-icon {
+    max-width: 100px;
+    width: 100%;
+}
+
+.list-inline {
+  text-align: left;
+  margin-left: 40px;
+}
+
+.yellow-star {
+  margin-right: 10px;
+  color: var(--bs-yellow);
+}
+
+/* WhatsApp Button Styling */
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's on top of other content */
+  text-decoration: none; /* Remove underline */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Adjust this for size */
+  height: 60px; /* Ensures uniform scaling */
+  transition: transform 0.2s ease-in-out; /* Smooth scaling effect on hover */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+}
+
+.back-to-top {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+.navbar-heading {
+ color: yellow;
+ font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @keyframes gradiant {
@@ -11466,6 +11543,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   .icon-large {
     font-size: 20px; /* Adjust the size as needed */
   }
+
+  .navbar-heading {
+   font-size: 20px !important;
+   }
 }
 
 @media (max-width: 768px) {
@@ -11477,10 +11558,167 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin: 25px 0px;
   }
 
+  .tripadvisor img {
+    width: 24px;
+  }
+
   .contact-info p {
     font-size: 15px;
     color: rgba(255, 255, 255);
     margin: 3px 0;
     line-height: 1;
   }
+
+  .close-icon {
+    max-width: 30px !important;
+    width: 100%;
+  }
+
+  .portfolio-modal .modal-content {
+    padding-top: 3rem;
+    padding-bottom: 20px;
+  }
+
+  .navbar-heading {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .portfolio_modals-topic {
+    font-size: 30px !important;
+  }
+
+  .navbar-heading {
+    font-size: 13px !important;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials {
+  padding: 20px 0;
+  position: relative;
+}
+
+.testimonials:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.testimonials .testimonials-bg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.testimonials .container {
+  position: relative;
+  z-index: 3;
+}
+
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
+  overflow: hidden;
+}
+
+.testimonials .testimonial-item {
+  text-align: center;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
+
+.testimonials .testimonial-item .stars {
+  margin-bottom: 15px;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  font-size: 26px;
+  line-height: 0;
+}
+
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
+}
+
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+
+.testimonials .swiper-wrapper {
+  height: auto;
+}
+
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: color-mix(in srgb, var(--default-color), transparent 50%);
+  opacity: 0.5;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--default-color);
+  opacity: 1;
+}
+
+.swiper {
+  width: 100%;
+  /* max-width: 800px; */
+  margin: auto;
+}
+.testimonial-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.stars i {
+  color: #ffd700; /* Gold color for stars */
 }
