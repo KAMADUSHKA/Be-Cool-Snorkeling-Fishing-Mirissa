@@ -11722,3 +11722,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .stars i {
   color: #ffd700; /* Gold color for stars */
 }
+
+.wow {
+  visibility: hidden;
+}

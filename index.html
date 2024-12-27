@@ -89,6 +89,12 @@
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+        <!-- AOS CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+        <!-- AOS JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
         <!-- Structured Data (JSON-LD) - For SEO -->
         <script type="application/ld+json">
             {
@@ -135,22 +141,38 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading" >Welcome To Mirissa Turtle Snorkeling & Fishing Center</div>
-                <div class="masthead-heading text-uppercase">Turtle Snorkeling / Fishing</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+                <div class="swiper init-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="masthead-subheading" >Welcome To Mirissa Turtle Snorkeling & Fishing Center</div>
+                            <div class="masthead-heading text-uppercase">Turtle Snorkeling</div>
+                            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="masthead-subheading" >Welcome To Mirissa Turtle Snorkeling & Fishing Center</div>
+                            <div class="masthead-heading text-uppercase">Fishing Tours</div>
+                            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="masthead-subheading" >Welcome To Mirissa Turtle Snorkeling & Fishing Center</div>
+                            <div class="masthead-heading text-uppercase">Scuba Diving</div>
+                            <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
 
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h2 class="section-heading text-uppercase">Services</h2>
                     <h3 class="section-subheading text-muted">"Discover unforgettable marine adventures at Mirissa Turtle Snorkeling & Fishing Center! Dive with turtles, enjoy thrilling fishing tours, 
                         and explore the beauty of the ocean like never before."</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/Turtle.png" alt="Snorkeling Icon" class="img-fluid" style="width: 8rem; height: 8rem; border-radius: 50%; background-color:  #007bff14; padding: 10px; border: 3px solid #650c0c;">
                         </span>
@@ -158,7 +180,7 @@
                         <p class="text-muted">"Experience the magic of swimming alongside graceful sea turtles in their natural habitat. Explore vibrant coral reefs and crystal-clear waters, 
                             creating unforgettable memories."</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/Fishing.png" alt="Snorkeling Icon" class="img-fluid" style="width: 8rem; height: 8rem; border-radius: 50%; background-color: #007bff14; padding: 10px; border: 3px solid #650c0c;">
                         </span>
@@ -166,7 +188,7 @@
                         <p class="text-muted">Join our thrilling fishing tours and cast your line into the deep blue waters. Whether you’re an expert or a beginner, 
                             enjoy the excitement of reeling in the catch of the day while soaking in breathtaking ocean views.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <span class="fa-stack fa-4x">
                             <img src="assets/img/Diving.png" alt="Snorkeling Icon" class="img-fluid" style="width: 8rem; height: 8rem; border-radius: 50%; background-color: #007bff14; padding: 10px; border: 3px solid #650c0c;">
                         </span>
@@ -181,7 +203,7 @@
         <!-- About-->
         <section class="page-section" id="about">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h2 class="section-heading text-uppercase">About</h2>
                     <h3 class="section-subheading text-muted">At Mirissa Turtle Snorkeling & Fishing Center, we offer unforgettable ocean adventures, including snorkeling, scuba diving, and fishing tours. 
                         Dive into the beauty of marine life and create lifelong memories with us.</h3>
@@ -189,9 +211,8 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel" data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="300">
                             <div class="timeline-heading">
-                                <!-- <h4>2009-2011</h4> -->
                                 <h4 class="subheading">Who We Are?</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Mirissa Turtle Snorkeling & Fishing Center is your gateway to unforgettable marine adventures. We specialize in snorkeling with 
@@ -200,9 +221,8 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel" data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="300">
                             <div class="timeline-heading">
-                                <!-- <h4>March 2011</h4> -->
                                 <h4 class="subheading">Safty First</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Your safety is our top priority. At Mirissa Turtle Snorkeling & Fishing Center, we provide high-quality equipment, 
@@ -211,9 +231,8 @@
                     </li>
                     <li>
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel" data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="300">
                             <div class="timeline-heading">
-                                <!-- <h4>December 2015</h4> -->
                                 <h4 class="subheading">Expert Guidance</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Our team of experienced and certified guides ensures a safe, enjoyable, and informative experience. Whether you're snorkeling, 
@@ -222,9 +241,8 @@
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
+                        <div class="timeline-panel" data-aos="zoom-in-left" data-aos-duration="2000" data-aos-delay="300">
                             <div class="timeline-heading">
-                                <!-- <h4>July 2020</h4> -->
                                 <h4 class="subheading">Reasonable Prices</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">Enjoy unforgettable ocean adventures at competitive prices. We offer exceptional value with flexible packages to suit every 
@@ -249,13 +267,13 @@
         <!-- Packages -->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h2 class="section-heading text-uppercase">Packages</h2>
                     <h3 class="section-subheading text-muted">Choose from a variety of tailored packages that offer the best of Mirissa's marine adventures. Whether you're snorkeling, diving, 
                         or fishing, our packages are designed to provide an unforgettable experience at great value.</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 1-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#SnorkelingWithTurtles">
@@ -272,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 2-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#DeepSeaFishingTours">
@@ -289,7 +307,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#LowDeepseaFishingTours">
@@ -306,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 4-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#ScubaDiving">
@@ -323,7 +341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 5-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#SnorkelingWithWhales">
@@ -340,7 +358,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-sm-6" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="300">
                         <!-- Portfolio item 6-->
                         <div class="portfolio-item card-bg">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#BoatTours">
@@ -364,7 +382,7 @@
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h2 class="section-heading text-uppercase">Our Tour Snaps</h2>
                     <h3 class="section-subheading text-muted">Capture the essence of your unforgettable journey with us! Our tour snaps showcase the beauty, excitement, and serenity that await you on every adventure.</h3>
                 </div>
@@ -399,12 +417,12 @@
         <!-- Clients-->
         <div class="py-5 testimonials page-section">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h1 class="section-heading text-uppercase">What Clients are Say</h1>
                 </div>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="wow fadeInRightBig" data-wow-duration="1.5s" data-wow-delay="0.5s">
+                        <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
                             <div class="swiper init-swiper">
                                 <div class="swiper-wrapper">
                                 
@@ -470,28 +488,26 @@
                                             </p>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-    
-                    <!-- end col -->
                 </div>
-                <!-- end row -->
             </div>
         </div>
 
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                     <h2 class="section-heading text-uppercase">Contact Us</h2>
                     <h3 class="section-subheading text-muted">Get in touch with us for bookings, inquiries, or any assistance. We're here to help you plan your next adventure!</h3>
                 </div>
         
                 <div class="row align-items-stretch mb-5">
                     <!-- First Column: Address, Contact No, Email -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="300">
                         <div class="contact-info card p-4 shadow-lg rounded">
                             <p><strong>Address:</strong><a href="https://www.google.com/maps/place/Be+Cool+Snorkeling+%26+Fishing+Mirissa/@5.9376982,80.4795355,19.11z/data=!4m6!3m5!1s0x3ae13f00660fb555:0x70672cf92da605ad!8m2!3d5.9372591!4d80.4805834!16s%2Fg%2F11wx206kbx?authuser=0&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
                                 Thappawatta Rd, Mirissa, 81740</a></p>
@@ -522,7 +538,7 @@
                     </div>                    
         
                     <!-- Second Column: Google Maps iframe -->
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="300">
                         <div class="map-container">
                             <iframe 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d918.5627993816757!2d80.47953552168143!3d5.9376981760511125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13f00660fb555%3A0x70672cf92da605ad!2sBe%20Cool%20Snorkeling%20%26%20Fishing%20Mirissa!5e0!3m2!1sen!2slk!4v1735235766731!5m2!1sen!2slk" 
@@ -759,7 +775,14 @@
 </html>
 
 <script>
+
+    AOS.init({
+        duration: 1500, // Animation duration
+        once: false,    // Set to false for repeated animations on scroll
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
+
         const swiper = new Swiper(".init-swiper", {
             loop: true, // Enable infinite looping
             autoplay: {
@@ -768,7 +791,7 @@
             },
             slidesPerView: 1, // Show one slide at a time
             spaceBetween: 20, // Space between slides (optional)
-            effect: "fade", // Use fade effect for smooth transitions
+            effect: "fadeRight", // Use fade effect for smooth transitions
             fadeEffect: {
                 crossFade: true,
             },
