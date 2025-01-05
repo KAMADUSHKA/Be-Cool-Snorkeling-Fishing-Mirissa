@@ -11005,7 +11005,7 @@ header.masthead .masthead-heading {
 }
 
 #portfolio .card-bg:hover {
-  transform: scale(1.1); /* Slight enlargement on hover */
+  transform: scale(1.05); /* Slight enlargement on hover */
 }
 
 
@@ -11030,6 +11030,7 @@ header.masthead .masthead-heading {
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+  border-radius:10px
   
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -11159,7 +11160,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: #f61d25;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
