@@ -11010,7 +11010,7 @@ header.masthead .masthead-heading {
   margin-bottom: 2rem;
   color: #000;
   font-family: "Georgia", cursive;
-  -webkit-text-stroke: 0.5px white;
+  -webkit-text-stroke: 0.3px white;
 }
 
 @media (min-width: 768px) {
