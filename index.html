@@ -102,6 +102,8 @@
     <!-- AOS JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Structured Data (JSON-LD) - For SEO -->
     <script type="application/ld+json">
             {
@@ -154,7 +156,7 @@
 
 <body id="page-top">
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar- fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center gap-2" href="#page-top">
                 <img src="assets/img/about/Turtles-Snorkeling-In-Mirissa.png" alt="Turtles Snorkeling In Mirissa"
@@ -171,7 +173,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -180,39 +182,55 @@
         </div>
     </nav>
 
-    <!-- Masthead-->
+    <!-- Masthead Carousel -->
     <header class="masthead">
-
-        <!-- <video autoplay muted loop playsinline class="background-video">
-            <source src="assets/img/Turtle-Snorkeling-in-Mirissa.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video> -->
-
-        <div class="container">
-            <div class="swiper init-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="masthead-subheading">Welcome To Turtles Snorkeling In Mirissa</div>
-                        <div class="masthead-heading text-uppercase">100% Turtle Snorkeling</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="masthead-subheading">Welcome To Turtles Snorkeling In Mirissa</div>
-                        <div class="masthead-heading text-uppercase">Fishing Tours</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="masthead-subheading">Welcome To Turtles Snorkeling In Mirissa</div>
-                        <div class="masthead-heading text-uppercase">Scuba Diving</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="masthead-subheading">Welcome To Turtles Snorkeling In Mirissa</div>
-                        <div class="masthead-heading text-uppercase">Snorkeling With Whales</div>
-                        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Tell Me More</a>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+    
+                <!-- Slide 1 -->
+                <div class="swiper-slide" style="background-image: url('assets/img/Turtle_snorkeling_header.jpg');">
+                    <div class="carousel-content">
+                        <h3 class="masthead-subheading animate-subtitle">Welcome To Turtles Snorkeling In Mirissa</h3>
+                        <h1 class="masthead-heading animate-heading">100% Turtle Snorkeling Tours</h1>
+                        <a class="btn btn-primary btn-xl text-uppercase animate-button" href="#packages">More Info</a>
                     </div>
                 </div>
+    
+                <!-- Slide 2 -->
+                <div class="swiper-slide" style="background-image: url('assets/img/scuba_diving_header.jpg');">
+                    <div class="carousel-content">
+                        <h3 class="masthead-subheading animate-subtitle">Welcome To Turtles Snorkeling In Mirissa</h3>
+                        <h1 class="masthead-heading animate-heading">Scuba Diving Tours</h1>
+                        <a class="btn btn-primary btn-xl text-uppercase animate-button" href="#packages">More Info</a>
+                    </div>
+                </div>
+    
+                <!-- Slide 3 -->
+                <div class="swiper-slide" style="background-image: url('assets/img/whale-snorkeling_header.jpg');">
+                    <div class="carousel-content">
+                        <h3 class="masthead-subheading animate-subtitle">Welcome To Turtles Snorkeling In Mirissae</h3>
+                        <h1 class="masthead-heading animate-heading">Whale Snorkeling Tours</h1>
+                        <a class="btn btn-primary btn-xl text-uppercase animate-button" href="#packages">More Info</a>
+                    </div>
+                </div>
+    
+                <!-- Slide 4 -->
+                <div class="swiper-slide" style="background-image: url('assets/img/header-bg1.jpg');">
+                    <div class="carousel-content">
+                        <h3 class="masthead-subheading animate-subtitle">Welcome To Turtles Snorkeling In Mirissa</h3>
+                        <h1 class="masthead-heading animate-heading">Fishing Tours</h1>
+                        <a class="btn btn-primary btn-xl text-uppercase animate-button" href="#packages">More Info</a>
+                    </div>
+                </div>
+    
             </div>
+    
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- Navigation Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </header>
 
@@ -344,7 +362,7 @@
     </section>
 
     <!-- Packages -->
-    <section class="page-section bg-light" id="portfolio">
+    <section class="page-section bg-light" id="packages">
         <div class="container">
             <div class="text-center" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
                 <h2 class="section-heading text-uppercase">Packages</h2>
@@ -715,23 +733,65 @@
         </div>
     </section>
 
+    <!-- ======= Footer ======= -->
+    <footer class="footer bg-black text-light pt-5 pb-4">
+    <div class="container">
+        <div class="row">
 
-    <!-- Footer-->
-    <footer class="footer py-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start"> Powered by <a href="webmindinnovation.com">WebMind Innovation</a>
-                    2024 , All right reserved.</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                    <a class="btn btn-outline-info btn-social mx-2 "
-                        href="https://web.facebook.com/profile.php?id=61570207032894" aria-label="Facebook"><i
-                            class="fab fa-facebook fa-2x"></i></a>
-                    <a class="btn btn-outline-info btn-social mx-2" href="#!" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
+        <!-- Logo & About -->
+        <div class="col-lg-4 col-md-6 mb-4 footer-about">
+            <img src="assets/img/about/Turtles-Snorkeling-In-Mirissa.png" alt="Logo" class="footer-logo mb-3" style="width: 80px;">
+            <p>
+            Experience the ultimate snorkeling & fishing adventures in Mirissa.  
+            Join us for unforgettable moments exploring Sri Lanka’s magical ocean world.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 mb-4 footer-links">
+            <h5 class="text-uppercase mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6 mb-4 footer-contact">
+            <h5 class="text-uppercase mb-3">Contact Us</h5>
+            <p><i class="bi bi-geo-alt"></i> Mirissa, Sri Lanka</p>
+            <p><i class="bi bi-phone"></i> +94 71 031 4473</p>
+            <p><i class="bi bi-envelope"></i> pathumsandeepa17@gmail.com</p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-lg-3 col-md-6 mb-4 footer-social">
+            <h5 class="text-uppercase mb-3">Follow Us</h5>
+            <div class="social-icons gap-3">
+                <a href="https://wa.me/+94710314473?text=Hello%20I%20would%20like%20to%20inquire%20about%20your%20services" class="me-2">
+                    <i class="fab fa-whatsapp icon-large"></i>
+                </a>
+                <a href="https://www.instagram.com/be_cool_snorkeling_and_fishing/"" class="me-2">
+                    <i class="fab fa-instagram icon-large"></i>
+                </a>
+                <a href="#" class="me-2">
+                    <i class="fab fa-facebook icon-large"></i>
+                </a>
             </div>
         </div>
+
+        </div>
+        <hr class="mt-4 mb-3 text-light">
+        <div class="text-center">
+        <p class="mb-0">&copy; 2025 <strong>Turtles Snorkeling in Mirissa</strong>. All Rights Reserved.</p>
+        </div>
+    </div>
     </footer>
+    <!-- ======= End Footer ======= -->
+
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-primary btn-danger btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
@@ -979,6 +1039,8 @@
     <script src="js/scripts.js"></script>
 
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>
@@ -1016,3 +1078,16 @@
     });
 
 </script>
+
+<script>
+    var swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        speed: 1200,
+    });
+</script>
+
