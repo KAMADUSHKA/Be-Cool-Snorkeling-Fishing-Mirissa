@@ -1097,35 +1097,66 @@
 
 <script>
 
+    // AOS.init({
+    //     duration: 1500, 
+    //     once: false,   
+    // });
+
+    // document.addEventListener("DOMContentLoaded", function () {
+
+    //     const swiper = new Swiper(".init-swiper", {
+    //         loop: true, 
+    //         autoplay: {
+    //             delay: 5000, 
+    //             disableOnInteraction: false, 
+    //         },
+    //         slidesPerView: 1, 
+    //         spaceBetween: 20, 
+    //         effect: "fadeRight", 
+    //         fadeEffect: {
+    //             crossFade: true,
+    //         },
+    //         pagination: {
+    //             el: ".swiper-pagination", 
+    //             clickable: true,
+    //         },
+    //         navigation: {
+    //             nextEl: ".swiper-button-next", 
+    //             prevEl: ".swiper-button-prev",
+    //         },
+    //     });
+    // });
+
+
     AOS.init({
-        duration: 1500, // Animation duration
-        once: false,    // Set to false for repeated animations on scroll
-    });
+  duration: 1500,
+  once: false,
+});
 
-    document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".init-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    effect: "fade", // ✅ Correct fade effect
+    fadeEffect: {
+      crossFade: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+});
 
-        const swiper = new Swiper(".init-swiper", {
-            loop: true, // Enable infinite looping
-            autoplay: {
-                delay: 5000, // Delay between slides in milliseconds
-                disableOnInteraction: false, // Autoplay should not stop on user interaction
-            },
-            slidesPerView: 1, // Show one slide at a time
-            spaceBetween: 20, // Space between slides (optional)
-            effect: "fadeRight", // Use fade effect for smooth transitions
-            fadeEffect: {
-                crossFade: true,
-            },
-            pagination: {
-                el: ".swiper-pagination", // Optional: Add pagination indicators
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next", // Optional: Add navigation buttons
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    });
 
 </script>
 
